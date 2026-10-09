@@ -1,0 +1,51 @@
+{
+  "kpi": {
+    "lot": 2000.0,
+    "limit": 410171717355.0,
+    "laku": 240.0,
+    "laku_pct": 12.0,
+    "pokok": 51258617539.0,
+    "bea": 2413656000.0,
+    "missing_status": 258.0,
+    "missing_pct": 12.9,
+    "median_limit": 95474304.5,
+    "median_duration": 27.458333333333332,
+    "pokok_count": 240.0
+  },
+  "pemeriksaan": {
+    "baris": 2000,
+    "kode_lot_kosong": 0,
+    "kode_lot_duplikat": 0,
+    "tanggal_tidak_valid": 0,
+    "angka_tidak_valid": 0,
+    "durasi_negatif": 0,
+    "LAKU_tanpa_pokok": 0,
+    "non_LAKU_dengan_pokok": 0
+  },
+  "narasi": [
+    {
+      "title": "Lengkapi status sebelum menilai outcome",
+      "finding": "258 dari 2.000 lot (12,9%) belum memiliki status. LAKU tercatat 240 lot (12,0% dari observasi terpilih).",
+      "meaning": "Status proses, pembatalan, dan status kosong bercampur dalam dataset. Proporsi LAKU belum dapat ditafsirkan sebagai tingkat keberhasilan resmi.",
+      "action": "Rekonsiliasi status dan tanggal pembaruan, lalu sepakati status final dan denominator bersama pemilik proses sebelum menetapkan KPI keberhasilan.",
+      "owner": "Pengelola data dan pemilik proses",
+      "deliverable": "Daftar status terverifikasi dan definisi KPI"
+    },
+    {
+      "title": "Arahkan penelaahan wilayah pada volume dan kelengkapan",
+      "finding": "Jawa Timur memiliki 31 status kosong dari 221 lot (14,0%), jumlah status kosong terbesar pada cakupan terpilih; peringkat dapat seri.",
+      "meaning": "Jumlah status kosong menunjukkan besarnya pekerjaan verifikasi. Perbedaan komposisi jenis lelang dan tahap proses membatasi perbandingan outcome antarwilayah.",
+      "action": "Telusuri lot tanpa status pada KPKNL di wilayah tersebut dan bandingkan jenis lelang serta tahap proses sebelum menyimpulkan perbedaan kinerja.",
+      "owner": "Koordinator Kanwil dan KPKNL",
+      "deliverable": "Daftar lot untuk ditelaah dan penyebab status kosong"
+    },
+    {
+      "title": "Prioritaskan telaah lot yang membawa nilai besar",
+      "finding": "200 lot dengan nilai limit tertinggi (sekitar 10% lot bernilai valid) memuat 35,5% total nilai limit valid. Tanah/Bangunan memiliki nilai limit agregat terbesar, Rp207,42 miliar.",
+      "meaning": "Volume lot saja tidak menggambarkan konsentrasi nilai. Nilai limit merupakan nilai penawaran minimum pada data latihan dan tidak sama dengan penerimaan yang telah terealisasi.",
+      "action": "Susun daftar lot bernilai besar untuk memeriksa kelengkapan dokumen, jadwal, dan status. Gunakan nilai pokok tercatat secara terpisah saat membahas realisasi.",
+      "owner": "Tim analitik dan penanggung jawab lot",
+      "deliverable": "Daftar prioritas berdasarkan nilai dan kelengkapan"
+    }
+  ]
+}
